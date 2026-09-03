@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Автозапчасти SPARTA — магазин автозапчастей в Альметьевске</title>
+    <title>Магазин автозапчастей SPARTA в Альметьевске</title>
     <meta
       name="description"
-      content="Автозапчасти SPARTA в Альметьевске: запчасти на все виды авто, аккумуляторы (АКБ), глушители, шумоизоляция, ковры, подкрылки, авточехлы и аксессуары. ул. Герцена, 100, рядом с автовокзалом. Скидка 5%. Тел. +7 960 063-87-88."
+      content="Магазин автозапчастей SPARTA в Альметьевске: запчасти на все виды авто, аккумуляторы (АКБ), глушители, шумоизоляция, ковры, подкрылки, авточехлы и аксессуары. ул. Герцена, 100, рядом с автовокзалом. Скидка 5%. Тел. +7 960 063-87-88."
     />
     <link
       rel="icon"
@@ -216,22 +216,6 @@
         gap: 14px;
       }
 
-      .phone-header {
-        font-weight: 700;
-        text-decoration: none;
-        color: var(--ink);
-        white-space: nowrap;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-      }
-
-      .phone-header .icon {
-        width: 18px;
-        height: 18px;
-        color: var(--accent);
-      }
-
       .button {
         display: inline-flex;
         align-items: center;
@@ -284,6 +268,11 @@
       .button-small {
         padding: 9px 16px;
         font-size: 14px;
+      }
+
+      .button-small .icon {
+        width: 16px;
+        height: 16px;
       }
 
       .menu-button {
@@ -1132,6 +1121,16 @@
       }
 
       /* Responsive */
+      @media (max-width: 1300px) {
+        .eyebrow-small {
+          display: none;
+        }
+
+        .nav {
+          gap: 18px;
+        }
+      }
+
       @media (max-width: 980px) {
         .nav {
           display: none;
@@ -1222,8 +1221,15 @@
       }
 
       @media (max-width: 760px) {
-        .phone-header {
-          display: none;
+        .header-actions .button-small {
+          padding: 7px 12px;
+          font-size: 12px;
+          gap: 6px;
+        }
+
+        .header-actions .button-small .icon {
+          width: 13px;
+          height: 13px;
         }
 
         .card-grid,
@@ -1313,7 +1319,7 @@
             </svg>
           </span>
           <span class="brand-text">
-            <span class="eyebrow-small">Автозапчасти</span>
+            <span class="eyebrow-small">Магазин автозапчастей</span>
             <span class="brand-name">SPARTA</span>
           </span>
         </a>
@@ -1327,17 +1333,11 @@
         </nav>
 
         <div class="header-actions">
-          <a class="phone-header" href="tel:+79600638788">
+          <a class="button button-primary button-small" href="tel:+79600638788">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.4 21 3 12.6 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z" fill="currentColor" />
             </svg>
             +7 960 063-87-88
-          </a>
-          <a class="button button-primary button-small" href="tel:+79600638788">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" style="width:16px;height:16px">
-              <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.4 21 3 12.6 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z" fill="currentColor" />
-            </svg>
-            Позвонить
           </a>
           <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
             <span></span>
@@ -1358,7 +1358,7 @@
     </div>
 
     <main id="top">
-      <section class="hero" id="hero" aria-label="Автозапчасти SPARTA в Альметьевске">
+      <section class="hero" id="hero" aria-label="Магазин автозапчастей SPARTA в Альметьевске">
         <div class="container hero-inner">
           <svg class="hero-art" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
             <circle cx="50" cy="50" r="48" fill="none" stroke="#b8863b" stroke-width="1" stroke-dasharray="1.513 5.043" opacity="0.6" />
@@ -1374,7 +1374,7 @@
 
           <div class="hero-copy">
             <p class="eyebrow">Магазин автозапчастей · ул. Герцена, 100, Альметьевск</p>
-            <h1>Автозапчасти <span class="accent-word">SPARTA</span> — запчасти на все виды авто</h1>
+            <h1>Магазин автозапчастей <span class="accent-word">SPARTA</span> — запчасти на все виды авто</h1>
             <p class="hero-lead">
               Ковры и подкрылки, аккумуляторы (АКБ), глушители, шумоизоляция, авточехлы и аксессуары.
               Подбираем деталь под вашу марку и модель — рядом с автовокзалом.
@@ -1507,7 +1507,7 @@
             <h2>SPARTA — рядом с автовокзалом в Альметьевске</h2>
             <p>
               Магазин находится на ул. Герцена, 100 — между ул. 8 Марта и ул. Р. Фахретдина, рядом
-              с автовокзалом и магазином «Эльдорадо». Работаем в Альметьевске больше 12 лет — клиенты
+              с автовокзалом и ТЦ «Москва». Работаем в Альметьевске более 25 лет — клиенты
               возвращаются к нам снова и советуют знакомым. Уточняйте наличие детали по телефону
               или в соцсетях — ответим и подскажем, что подойдёт на вашу машину.
             </p>
@@ -1779,7 +1779,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div>© SPARTA. Автозапчасти в Альметьевске, ул. Герцена, 100.</div>
+        <div>© SPARTA. Магазин автозапчастей в Альметьевске, ул. Герцена, 100.</div>
         <a href="tel:+79600638788">+7 960 063-87-88</a>
         <div class="footer-socials">
           <a class="social-link" href="https://wa.me/79600638788" target="_blank" rel="noreferrer" aria-label="WhatsApp">
